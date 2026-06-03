@@ -1,0 +1,30 @@
+name: Build and Test
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Restore
+        run: dotnet restore AnvilCore.slnx
+
+      - name: Build
+        run: dotnet build AnvilCore.slnx --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test AnvilCore.slnx --configuration Release --no-build --verbosity normal
