@@ -1,0 +1,22 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AnvilCore.AspNetCore/AnvilCore.AspNetCore.csproj" />
+    <Project Path="src/AnvilCore.AutoFixture/AnvilCore.AutoFixture.csproj" />
+    <Project Path="src/AnvilCore.Diagnostics/AnvilCore.Diagnostics.csproj" />
+    <Project Path="src/AnvilCore.Interception/AnvilCore.Interception.csproj" />
+    <Project Path="src/AnvilCore.NSubstitute/AnvilCore.NSubstitute.csproj" />
+    <Project Path="src/AnvilCore.Testcontainers.Postgres/AnvilCore.Testcontainers.Postgres.csproj" />
+    <Project Path="src/AnvilCore.Testcontainers.RabbitMq/AnvilCore.Testcontainers.RabbitMq.csproj" />
+    <Project Path="src/AnvilCore.Testcontainers.Redis/AnvilCore.Testcontainers.Redis.csproj" />
+    <Project Path="src/AnvilCore.Testcontainers/AnvilCore.Testcontainers.csproj" />
+    <Project Path="src/AnvilCore.Xunit/AnvilCore.Xunit.csproj" />
+    <Project Path="src/AnvilCore/AnvilCore.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AnvilCore.AspNetCore.Tests/AnvilCore.AspNetCore.Tests.csproj" />
+    <Project Path="tests/AnvilCore.Interception.Tests/AnvilCore.Interception.Tests.csproj" />
+    <Project Path="tests/AnvilCore.SampleApi.Tests/AnvilCore.SampleApi.Tests.csproj" />
+    <Project Path="tests/AnvilCore.SampleApi/AnvilCore.SampleApi.csproj" />
+    <Project Path="tests/AnvilCore.Tests/AnvilCore.Tests.csproj" />
+  </Folder>
+</Solution>

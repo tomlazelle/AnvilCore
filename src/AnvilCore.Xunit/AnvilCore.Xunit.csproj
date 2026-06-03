@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AnvilCore\AnvilCore.csproj" />
+    <ProjectReference Include="..\AnvilCore.AspNetCore\AnvilCore.AspNetCore.csproj" />
+  </ItemGroup>
+
+</Project>
