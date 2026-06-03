@@ -3,6 +3,9 @@ name: Build and Test
 on:
   pull_request:
   push:
+    branches:
+      - master
+      - main
 
 permissions:
   contents: read
@@ -27,4 +30,4 @@ jobs:
         run: dotnet build AnvilCore.slnx --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test AnvilCore.slnx --configuration Release --no-build --verbosity normal
+        run: dotnet test AnvilCore.slnx --configuration Release --no-build --no-restore --verbosity normal
