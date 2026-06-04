@@ -3,9 +3,6 @@ name: Build and Test
 on:
   pull_request:
   push:
-    branches:
-      - master
-      - main
 
 permissions:
   contents: read
@@ -16,10 +13,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        uses: actions/checkout@v4
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@d4c94342e560b34958eacfc5d055d21461ed1c5d # v5.0.0
+        uses: actions/setup-dotnet@v4
         with:
           global-json-file: global.json
 
@@ -30,4 +27,4 @@ jobs:
         run: dotnet build AnvilCore.slnx --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test AnvilCore.slnx --configuration Release --no-build --no-restore --verbosity normal
+        run: dotnet test AnvilCore.slnx --configuration Release --no-build --verbosity normal
